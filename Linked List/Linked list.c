@@ -34,7 +34,7 @@ pop(){
 		printf("No element to delete");
 	}
 	else{
-		while(temp->link!=NULL){
+		while((temp->link)->link!=NULL){
 			temp=temp->link;
 		}
 		temp1=temp->link;

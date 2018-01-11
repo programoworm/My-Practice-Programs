@@ -15,6 +15,10 @@ int main()
 	printf("Enter the number of elements in the array: ");
 	scanf("%d",&n);
 	index=(int*)malloc(n*sizeof(int));
+	if(index==NULL){
+		printf("Memory cannot be allocated");
+		return 0;
+	}
 	b=index;
 	for(i=0;i<n;i++){
 		printf("Enter the element: ");

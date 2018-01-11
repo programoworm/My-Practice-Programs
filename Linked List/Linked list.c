@@ -33,6 +33,9 @@ pop(){
 	if(temp==NULL){
 		printf("No element to delete");
 	}
+	else if(temp->link==NULL){
+		head=NULL;
+	}
 	else{
 		while((temp->link)->link!=NULL){
 			temp=temp->link;
@@ -66,7 +69,7 @@ show()
 {
 	sll *temp;
 	if(head==NULL){
-		printf("No node to delete");
+		printf("No node to show");
 	}
 	else{
 		temp=head;
@@ -74,6 +77,6 @@ show()
 			printf("%d\t",temp->data);
 			temp=temp->link;
 		}
-		printf("%d\t",temp->data);
+		printf("%d\n",temp->data);
 	}
 }

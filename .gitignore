@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+.editorconfig
+
+# VS Code Configs
+.vscode
